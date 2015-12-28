@@ -1,0 +1,96 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <meta name="author" content="Wink Hosting (www.winkhosting.com)" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="images/style.css" type="text/css" />
+</head>
+<body style="font-size: 12pt; font-family: Times New Roman">
+<form id="form1" runat="server">
+<div id="page" align="center">
+		<div id="content" style="width:800px">
+            &nbsp;<div id="logo">
+				<div style="margin-top:70px" class="whitetitle">
+                    Vi&#7879;t-Pháp</div>
+			</div>
+			<div id="topheader">
+				<div align="left" class="bodytext">
+					<br />
+                    B&#7879;nh Vi&#7879;n Vi&#7879;t - Pháp<br />
+                    227 Nguy&#7877;n V&#259;n C&#7915;, Q5,HCM<br />
+                    &#272;T:0908833690</div>
+				<div id="toplinks" class="smallgraytext" style="right: 10px; top: 10px; width: 300px; text-align: right;">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                    |<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+                    |
+                    <asp:HyperLink ID="HyperLink3" runat="server">About</asp:HyperLink></div>
+			</div>
+			<div id="menu">
+				<div align="right" class="smallwhitetext" style="padding:9px;">
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                    |
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/ThongTinBacSi.aspx">TTin B.S&#297;</asp:HyperLink>|<asp:HyperLink
+                        ID="HyperLink6" runat="server" NavigateUrl="~/XemLichTrucBacSi.aspx">L&#7883;ch Tr&#7921;c</asp:HyperLink>
+                    |<asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/DangKyKhamBenh.aspx">&#272;Ký Khám</asp:HyperLink>
+                    |<asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/DangKyTaiKhoan.aspx">&#272;Ký TKho&#7843;n</asp:HyperLink>
+                    |<asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/DangNhap.aspx">&#272;&#259;ng Nh&#7853;p</asp:HyperLink>|<asp:HyperLink
+                        ID="HyperLink10" runat="server" NavigateUrl="~/DangKyTaiKham.aspx">Tái Khám</asp:HyperLink></div>
+			</div>
+			<div id="contenttext">
+				<div style="padding:10px">
+					<span class="titletext">B&#7879;nh Vi&#7879;n Vi&#7879;t-Pháp</span></div>
+				<div align="justify" class="bodytext" style="padding:12px;"><strong><span style="color: #ff3300">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; Ni&#7873;m Tin Y &#272;&#432;c.<br />
+                        <br />
+                    </span>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </strong></div>
+			</div>
+			<div id="footer" class="smallgraytext">
+				<a href="#">Nh</a>óm Phát Tri&#7875;n: F5 Group<br />
+                Version 1.0</div>
+            &nbsp;
+            <table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="background: white;
+                width: 599.25pt; mso-cellspacing: 0cm; mso-padding-alt: 0cm 0cm 0cm 0cm" width="799">
+                <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes">
+                    <td style="border-right: #ece9d8; padding-right: 0cm; border-top: #ece9d8; padding-left: 0cm;
+                        padding-bottom: 0cm; border-left: #ece9d8; width: 140.25pt; padding-top: 16.5pt;
+                        border-bottom: #ece9d8; background-color: transparent" valign="top" width="187">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 8.5pt; color: black; font-family: Arial">
+                                <?xml namespace="" ns="urn:schemas-microsoft-com:office:office" prefix="o" ?>
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 8.5pt; color: black; font-family: Arial">
+                                <o:p></o:p>
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                <o:p>&nbsp;</o:p>
+            </p>
+		</div>
+	</div>   
+	</form>  
+</body>
+</html>
+<!--
+
+
+   
+   
+</form>
+-->

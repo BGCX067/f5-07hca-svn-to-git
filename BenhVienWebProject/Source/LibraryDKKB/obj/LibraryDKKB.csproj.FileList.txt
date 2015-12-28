@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\LibraryDKKB.dll
+bin\Debug\LibraryDKKB.pdb
+obj\Debug\LibraryDKKB.dll
+obj\Debug\LibraryDKKB.pdb

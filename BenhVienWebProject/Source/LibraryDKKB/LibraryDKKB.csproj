@@ -1,0 +1,74 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C9EEEAF-E52A-46F8-82DF-43308C7B5ACE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryDKKB</RootNamespace>
+    <AssemblyName>LibraryDKKB</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access\BacSiAccess.cs" />
+    <Compile Include="Access\BenhNhanAccess.cs" />
+    <Compile Include="Access\KhoaAccess.cs" />
+    <Compile Include="Access\LichTrucAccess.cs" />
+    <Compile Include="Access\NguoiLonAccess.cs" />
+    <Compile Include="Access\PhieuDangKyAccess.cs" />
+    <Compile Include="Access\TaiKhoanAccess.cs" />
+    <Compile Include="Access\ThamSoAccess.cs" />
+    <Compile Include="Access\TreEmAccess.cs" />
+    <Compile Include="ConTrol\BacSiControl.cs" />
+    <Compile Include="ConTrol\BenhNhanControl.cs" />
+    <Compile Include="ConTrol\KhoaControl.cs" />
+    <Compile Include="ConTrol\LichTrucControl.cs" />
+    <Compile Include="ConTrol\NguoiLonControl.cs" />
+    <Compile Include="ConTrol\PhieuDangKyControl.cs" />
+    <Compile Include="ConTrol\TaiKhoanControl.cs" />
+    <Compile Include="ConTrol\ThamSoControl.cs" />
+    <Compile Include="ConTrol\TreEmControl.cs" />
+    <Compile Include="DataService.cs" />
+    <Compile Include="Info\BacSiInfo.cs" />
+    <Compile Include="Info\BenhNhanInfo.cs" />
+    <Compile Include="Info\KhoaInfo.cs" />
+    <Compile Include="Info\LichTrucInfo.cs" />
+    <Compile Include="Info\NguoiLonInfo.cs" />
+    <Compile Include="Info\PhieuDangKyInfo.cs" />
+    <Compile Include="Info\TaiKhoanInfo.cs" />
+    <Compile Include="Info\ThamSoInfo.cs" />
+    <Compile Include="Info\TreEmInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
